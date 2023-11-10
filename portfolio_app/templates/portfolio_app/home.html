@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <h1>Welcome to My Portfolio</h1>
+
+    <h2>Projects</h2>
+    <ul>
+        {% for projects in project %}
+            <li>{{ project.title }} - {{ project.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+        {% for skills in skill %}
+            <li>{{ skill.name }} - {{ skill.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
