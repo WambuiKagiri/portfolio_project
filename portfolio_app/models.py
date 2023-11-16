@@ -9,3 +9,7 @@ class Project(models.Model):
 class Skill(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
+
+class Document(models.Model):
+    title = models.CharField(max_length=255)
+    file = models.FileField(upload_to='documents/')
