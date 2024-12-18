@@ -25,6 +25,6 @@ from portfolio_project import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('portfolio_app.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
